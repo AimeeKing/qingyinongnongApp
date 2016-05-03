@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/question"
+        android:gravity="center_horizontal"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+        <ImageButton
+            android:id="@+id/id_tab_question_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_1"
+            android:background="#00000000"
+            android:clickable="false"
+            android:scaleType="centerInside"
+    />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/explore"
+        android:gravity="center_horizontal"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+        <ImageButton
+            android:scaleType="centerInside"
+            android:id="@+id/id_tab_explore_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@drawable/icon_2" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="match_parent">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/crowdfunding"
+        android:gravity="center_horizontal"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+        <ImageButton
+            android:scaleType="centerInside"
+            android:id="@+id/id_tab_crowdfunding_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@drawable/icon_3" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/my"
+        android:gravity="center_horizontal"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+        <ImageButton
+            android:scaleType="centerInside"
+            android:id="@+id/id_tab_my_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@drawable/icon_4" />
+    </LinearLayout>
+</LinearLayout>

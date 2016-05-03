@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:contentPaddingRight="16dp"
+    app:contentPaddingLeft="16dp"
+    app:contentPaddingTop="16dp"
+    app:contentPaddingBottom="16dp"
+    android:layout_marginTop="8dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="255dp"
+            android:id="@+id/title"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/title_cardview"
+            android:text="最新生产的茄子希望大家众筹生产种植，谢谢大家"/>
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:id="@+id/nongnong_img"
+            android:src="@drawable/shucai"
+            android:layout_below="@id/title"
+            android:scaleType="centerInside"/>
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:id="@+id/nongnong_img2"
+            android:src="@drawable/shucai2"
+            android:layout_alignTop="@id/nongnong_img"
+            android:layout_toRightOf="@id/nongnong_img"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerInside"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/user_img"
+            android:src="@drawable/page4_icon1"
+            android:scaleType="centerInside"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="农农情谊小朋友"
+            android:layout_alignBottom="@+id/user_img"
+            android:layout_toRightOf="@+id/user_img" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/talk_num_img"
+            android:src="@drawable/page4_icon2"
+            android:scaleType="centerInside"
+            android:layout_alignBottom="@+id/talk_num"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:layout_marginLeft="4dp"
+            android:layout_alignBottom="@+id/user_img"
+            android:layout_toRightOf="@+id/talk_num_img"
+            android:id="@+id/talk_num" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/love_num_img"
+            android:src="@drawable/page4_icon3"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="30dp"
+            android:layout_alignBottom="@+id/love_num"
+            android:layout_toRightOf="@id/talk_num" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:layout_marginLeft="4dp"
+            android:layout_alignBottom="@+id/user_img"
+            android:layout_toRightOf="@+id/love_num_img"
+            android:id="@+id/love_num" />
+        <TextView
+            android:id="@+id/time"
+            android:textSize="12sp"
+            android:textColor="@color/describ_cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="03-31  13:33"
+        android:layout_toRightOf="@+id/love_num"
+        android:layout_marginLeft="27dp"
+        android:layout_alignTop="@+id/love_num" />
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:id="@+id/care"
+            android:src="@drawable/page4_gz"
+            android:background="#00ffffff"
+            android:scaleType="centerInside"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

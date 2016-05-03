@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    app:contentPaddingLeft="16dp"
+    app:contentPaddingRight="16dp"
+    app:contentPaddingTop="8dp"
+    app:contentPaddingBottom="8dp"
+    app:cardElevation="2dp"
+    android:layout_marginTop="4dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:id="@+id/commodity"
+        android:src="@drawable/shucai"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/goods_describ" />
+    <TextView
+        android:id="@+id/title"
+        android:textSize="16sp"
+        android:textColor="@color/title_cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toEndOf="@+id/commodity" />
+        <TextView
+            android:id="@+id/describ"
+            android:textSize="12sp"
+            android:textColor="@color/describ_cardview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/goods_describ"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/title"
+            android:layout_alignStart="@id/title" />
+        <ImageView android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/img1"
+            android:src="@drawable/page11_icon3"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/goods_describ"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/describ" />
+        <TextView
+            android:id="@+id/talk_num"
+            android:textSize="12sp"
+            android:textColor="@color/describ_cardview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_marginLeft="4dp"
+            android:layout_alignTop="@+id/img1" />
+        <ImageView android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/img2"
+            android:src="@drawable/page11_icon4"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/goods_describ"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/talk_num"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/talk_num"/>
+        <TextView
+            android:id="@+id/love_num"
+            android:textSize="12sp"
+            android:textColor="@color/describ_cardview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:layout_toRightOf="@+id/img2"
+            android:layout_marginLeft="4dp"
+            android:layout_alignTop="@+id/img2" />
+
+        <TextView
+            android:id="@+id/time"
+            android:textSize="12sp"
+            android:textColor="@color/describ_cardview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="03-31  13:33"
+            android:layout_toRightOf="@+id/love_num"
+            android:layout_marginLeft="30dp"
+            android:layout_alignTop="@+id/love_num" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
